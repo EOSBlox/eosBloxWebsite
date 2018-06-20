@@ -69,6 +69,10 @@ class MyApp extends PolymerElement {
           color: black;
           font-weight: bold;
         }
+
+        .bold {
+          font-weight:700;
+        }
       </style>
       <iron-media-query query="(min-width: 600px)" query-matches="{{desktop}}"></iron-media-query>
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
@@ -96,7 +100,7 @@ class MyApp extends PolymerElement {
               <template is="dom-if" if="{{!desktop}}">
                 <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
               </template>
-              <div main-title="" class="center">EOS Blox</div>
+              <div main-title="" class="center">EOS <span class="bold">BLOX</span></div>
             </app-toolbar>
           </app-header>
 
