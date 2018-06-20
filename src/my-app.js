@@ -21,9 +21,8 @@ class MyApp extends PolymerElement {
     return html`
       <style>
         :host {
-          --app-primary-color: #4285f4;
-          --app-secondary-color: black;
-
+          --app-primary-color: #F3D879;
+          --app-secondary-color: #3D4956;
           display: block;
         }
 
@@ -31,9 +30,23 @@ class MyApp extends PolymerElement {
           display: none;
         }
 
+        app-toolbar {
+          max-width:1100px;
+          margin: 0px auto;
+        }
+
+        iron-pages {
+          max-width:1100px;
+          margin: 0px auto;  
+        }
+
         app-header {
-          color: #fff;
-          background-color: var(--app-primary-color);
+          color: --app-secondary-color;
+          background-color: #FFFFFF;
+        }
+
+        app-header .center {
+          text-align: center;
         }
 
         app-header paper-icon-button {
@@ -57,14 +70,14 @@ class MyApp extends PolymerElement {
           font-weight: bold;
         }
       </style>
-
+      <iron-media-query query="(min-width: 600px)" query-matches="{{desktop}}"></iron-media-query>
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
       </app-location>
 
       <app-route route="{{route}}" pattern="[[rootPath]]:page" data="{{routeData}}" tail="{{subroute}}">
       </app-route>
 
-      <app-drawer-layout fullbleed="" narrow="{{narrow}}">
+      <app-drawer-layout fullbleed="" narrow="{{narrow}}" force-narrow="">
         <!-- Drawer content -->
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
           <app-toolbar>Menu</app-toolbar>
@@ -78,10 +91,12 @@ class MyApp extends PolymerElement {
         <!-- Main content -->
         <app-header-layout has-scrolling-region="">
 
-          <app-header slot="header" condenses="" reveals="" effects="waterfall">
+          <app-header slot="header" condenses="" reveals="" effects="waterfall" fixed="">
             <app-toolbar>
-              <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-              <div main-title="">My App</div>
+              <template is="dom-if" if="{{!desktop}}">
+                <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
+              </template>
+              <div main-title="" class="center">EOS Blox</div>
             </app-toolbar>
           </app-header>
 
