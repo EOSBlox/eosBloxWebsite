@@ -2,13 +2,16 @@
 
 [![Build Status](https://travis-ci.org/Polymer/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/Polymer/polymer-starter-kit)
 
-Building blocks for great DApps.
 
-This template, along with the `polymer-cli` toolchain, also demonstrates use
-of the "PRPL pattern" This pattern allows fast first delivery and interaction with
-the content at the initial route requested by the user, along with fast subsequent
-navigation by pre-caching the remaining components required by the app and
-progressively loading them on-demand as the user navigates through the app.
+EOS Blox web components provide reusable and dynamic interface elements for your EOS DApps. For example if you wanted to allow users to create an accocunt and save a backup file, or create an identity each with their own EOS Keypairs, print a paper wallet you simply use an html tag like
+
+    <eos-account id="account"></eos-account>
+
+of if you are a bit more advanced and you want to use JavaScript you can call functions like
+
+    this.$.account.createAccount(password, username)
+
+All the encryption and acocunt objects are contained within the web component, leaving you to focus on the UX and UI of your next amazing EOS DApp.
 
 Webcomponents in a nutshell:
 
