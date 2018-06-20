@@ -1,12 +1,3 @@
-/**
- * @license
- * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
- * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
- * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
- * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
- * Code distributed by Google as part of the polymer project is also
- * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
- */
 import { PolymerElement, html } from "../node_modules/@polymer/polymer/polymer-element.js";
 import { setPassiveTouchGestures, setRootPath } from "../node_modules/@polymer/polymer/lib/utils/settings.js";
 import "../node_modules/@polymer/app-layout/app-drawer/app-drawer.js";
@@ -20,12 +11,8 @@ import "../node_modules/@polymer/app-route/app-route.js";
 import "../node_modules/@polymer/iron-pages/iron-pages.js";
 import "../node_modules/@polymer/iron-selector/iron-selector.js";
 import "../node_modules/@polymer/paper-icon-button/paper-icon-button.js";
-import './my-icons.js'; // Gesture events like tap and track generated from touch will not be
-// preventable, allowing for better scrolling performance.
-
-setPassiveTouchGestures(true); // Set Polymer's root path to the same value we passed to our service worker
-// in `index.html`.
-
+import './my-icons.js';
+setPassiveTouchGestures(true);
 setRootPath(MyAppGlobals.rootPath);
 
 class MyApp extends PolymerElement {
@@ -33,9 +20,8 @@ class MyApp extends PolymerElement {
     return html`
       <style>
         :host {
-          --app-primary-color: #4285f4;
-          --app-secondary-color: black;
-
+          --app-primary-color: #F3D879;
+          --app-secondary-color: #3D4956;
           display: block;
         }
 
@@ -43,9 +29,23 @@ class MyApp extends PolymerElement {
           display: none;
         }
 
+        app-toolbar {
+          max-width:1100px;
+          margin: 0px auto;
+        }
+
+        iron-pages {
+          max-width:1100px;
+          margin: 0px auto;  
+        }
+
         app-header {
-          color: #fff;
-          background-color: var(--app-primary-color);
+          color: --app-secondary-color;
+          background-color: #FFFFFF;
+        }
+
+        app-header .center {
+          text-align: center;
         }
 
         app-header paper-icon-button {
@@ -68,15 +68,19 @@ class MyApp extends PolymerElement {
           color: black;
           font-weight: bold;
         }
-      </style>
 
+        .bold {
+          font-weight:700;
+        }
+      </style>
+      <iron-media-query query="(min-width: 600px)" query-matches="{{desktop}}"></iron-media-query>
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
       </app-location>
 
       <app-route route="{{route}}" pattern="[[rootPath]]:page" data="{{routeData}}" tail="{{subroute}}">
       </app-route>
 
-      <app-drawer-layout fullbleed="" narrow="{{narrow}}">
+      <app-drawer-layout fullbleed="" narrow="{{narrow}}" force-narrow="">
         <!-- Drawer content -->
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
           <app-toolbar>Menu</app-toolbar>
@@ -90,10 +94,12 @@ class MyApp extends PolymerElement {
         <!-- Main content -->
         <app-header-layout has-scrolling-region="">
 
-          <app-header slot="header" condenses="" reveals="" effects="waterfall">
+          <app-header slot="header" condenses="" reveals="" effects="waterfall" fixed="">
             <app-toolbar>
-              <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-              <div main-title="">My App</div>
+              <template is="dom-if" if="{{!desktop}}">
+                <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
+              </template>
+              <div main-title="" class="center">EOS <span class="bold">BLOX</span></div>
             </app-toolbar>
           </app-header>
 
@@ -125,18 +131,13 @@ class MyApp extends PolymerElement {
   }
 
   _routePageChanged(page) {
-    // Show the corresponding page according to the route.
-    //
-    // If no page was found in the route data, page will be an empty string.
-    // Show 'view1' in that case. And if the page doesn't exist, show 'view404'.
     if (!page) {
       this.page = 'view1';
     } else if (['view1', 'view2', 'view3'].indexOf(page) !== -1) {
       this.page = page;
     } else {
       this.page = 'view404';
-    } // Close a non-persistent drawer when the page & route are changed.
-
+    }
 
     if (!this.$.drawer.persistent) {
       this.$.drawer.close();
@@ -144,10 +145,6 @@ class MyApp extends PolymerElement {
   }
 
   _pageChanged(page) {
-    // Import the page component on demand.
-    //
-    // Note: `polymer build` doesn't like string concatenation in the import
-    // statement, so break it up.
     switch (page) {
       case 'view1':
         import('./my-view1.js');
