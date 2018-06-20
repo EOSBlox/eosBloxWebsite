@@ -3,11 +3,11 @@
 [![Build Status](https://travis-ci.org/Polymer/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/Polymer/polymer-starter-kit)
 
 
-Web components provide reusable and dynamic interface elements for your EOS DApps. For example if you wanted to allow users to create an accocunt that can be locked and unlocked, save and restore a backup file, create mutiple identities each with their own name, EOS Keypair and Avater image, or let's say you want to allow the users of your DApp to print a paper wallet, with EOS Blox, its simple you simply use a familiar html tag like
+Web components provide reusable and dynamic interface elements for your EOS DApps. For example if you wanted to allow users to create an accocunt that can be locked and unlocked, save and restore a backup file, create mutiple identities each with their own name, EOS Keypair and Avater image, or let's say you want to allow the users of your DApp to print a paper wallet, with EOS Blox, it's as simple as using a familiar html tag like
 
     <eos-account id="eos-account"></eos-account>
 
-All the encryption and acocunt objects are contained within the web component, leaving you to focus on the UX and UI of your next amazing EOS DApp.
+All the encryption and acocunt objects are contained within the web component, leaving you to focus on the UX/UI of your next amazing EOS DApp.
 
 If you are a bit more advanced and you want to use a touch of JavaScript and you have used somthing like JQuery then picking up webcomoponents will be a breeze, you can call functions like
 
