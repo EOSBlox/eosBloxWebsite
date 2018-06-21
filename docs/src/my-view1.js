@@ -31,7 +31,6 @@ class MyView1 extends PolymerElement {
           width: auto;
           margin:25px 15px 25px 25px;
         }
-
         .jumbo-container .title{
           font-size:45px;
           font-weight:800;
@@ -46,8 +45,6 @@ class MyView1 extends PolymerElement {
           font-weight:300;
           color: #FFF;
         }
-
-
         .container {
           max-width:1100px;
           margin: 0 auto;
@@ -72,7 +69,6 @@ class MyView1 extends PolymerElement {
           text-align: center;
           line-height:70px;
         }
-
         .flex-wrap{
           display: flex;
           flex-wrap: wrap;
@@ -81,10 +77,19 @@ class MyView1 extends PolymerElement {
           padding:20px;
           min-width:300px;
         }
+        .code{
+        border:1px solid black;
+        border-radius: 5px;
+        background-color:#000;
+        white-space: pre-line;
+        padding:16px;
+        font-size:18px;
+        color: white;
+        font-family: "Lucida Console", Monaco, monospace;
+        line-height: 12px;
+        }
 
       </style>
-      <iron-media-query query="(min-width: 600px)" query-matches="{{desktop}}"></iron-media-query>
-
       <div class="jumbo">
       <div class="jumbo-container">
         <img src="../images/block-white.svg">
@@ -92,47 +97,53 @@ class MyView1 extends PolymerElement {
         </div>
         </div>
       </div> 
-
-
-
       <div class="container">
-        <div class="title">About EOS Blox.</div> 
-        <div class="header">EOS Blox makes the worlds first suite of web components specifically for the creative developement of EOS DApps. </br>
-          </div> 
-        <div class="content">Web components significantly accelerate development times and shortern the learning curve. 
+        <h1 class="title">About EOS Blox.</h1> 
+        <h2 class="header">EOS Blox makes the worlds first suite of web components specifically for the creative developement of EOS DApps. </h2> 
+        <div class="content">
+        
+        Web components are like building blocks, you make a few components that perform a single task and then join them together into a new component, significantly accelerate development times and shortern the learning curve. 
         We lovingly craft each reusable components to form the building blocks of your next EOS DApp.  
         EOS Blox allow you to keep all the style and expression that makes your dapp unique to you, yet provide you with common components that you can re-use. Web components run nativly in the browser </br></br></br>
 
-<div class="flex-wrap">
-  <div>
-    <b>We are curently working on...</b>
-    <ul>
-      <li>Secure Account Creation</li>
-      <li>Identity Management</li>
-      <li>Create Backup Keyfiles & Restore</li>
-      <li>Print Paper Wallets for each identity</li>
-    </ul>
-  </div>
-  <div>
-    <b>Next up we are focusing on transfers...</b>
-    <ul>
-      <li>Get Ballance for an Identity</li>
-      <li>Transfer EOS Tokens</li>
-      <li>Muti Signature Transfers</li>
-      <li>Escrow Transfers</li>
-    </ul>
-  </div>
-</div>
-
-
-
-
-
-
-
-          </br></br>
-
-          <div class="btn-critical">Show me a Webcomponent</div>
+        <div class="flex-wrap">
+          <div>
+            <b>We are curently working on...</b>
+            <ul>
+              <li>Secure Account Creation</li>
+              <li>Identity Management</li>
+              <li>Create Backup Keyfiles & Restore</li>
+              <li>Print Paper Wallets for each identity</li>
+            </ul>
+          </div>
+          <div>
+            <b>Next up we are focusing on transfers...</b>
+            <ul>
+              <li>Get Ballance for an Identity</li>
+              <li>Transfer EOS Tokens</li>
+              <li>Muti Signature Transfers</li>
+              <li>Escrow Transfers</li>
+            </ul>
+          </div>
+        </div>
+        </br></br>
+        <template is="dom-if" if="{{!demo}}">
+        <div class="btn-critical" on-click="_showDemo">Show me a Webcomponent</div>
+          </template>
+        
+          <template is="dom-if" if="{{demo}}">
+            <h3>&lt;Blox-Mnemonic> Demo</h3>
+            <p>We are going to generate a Mnemonic recovery phrase which is a series of 12 words, and conforms to the BIP39 specification. Mnemonic's are often used as password backups for wallets.</p>
+            <p>Each webcomponet looks just like a normal HTML tag</p>
+            <p> as well as the usual id="" or src="" properties, we can see the property 'password' has been added, this is what we will link up to the value of the input field</p>
+            <div class="code">
+              &lt;blox-mnemonic password="{password}" result="{result}">&lt;/blox-mnemonic></br>
+              Password: &lt;input type="password" value="{password}"></br>
+              Mnemonic: &lt;p>{result}&lt;/p></br>
+            </div>
+            <p> Above you will also notice we have added a 'result' property, this is where the component will hand back the mnemonic, for this demo we will link this to a paragraph tag.</p>
+            <p> Thats it, just 3 lines of code for you! Lets see it rendered to the DOM below.</p>
+          </template>
         </div> 
       </div>
     `;
@@ -140,10 +151,15 @@ class MyView1 extends PolymerElement {
 
   static get properties() {
     return {
-      desktop: {
-        type: Boolean
+      demo: {
+        type: Boolean,
+        value: false
       }
     };
+  }
+
+  _showDemo() {
+    this.demo = true;
   }
 
 }
