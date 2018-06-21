@@ -78,15 +78,14 @@ class MyView1 extends PolymerElement {
           min-width:300px;
         }
         .code{
-        border:1px solid black;
-        border-radius: 5px;
-        background-color:#000;
-        white-space: pre-line;
-        padding:16px;
-        font-size:18px;
-        color: white;
-        font-family: "Lucida Console", Monaco, monospace;
-        line-height: 12px;
+          border:1px solid black;
+          border-radius: 5px;
+          background-color:#000;
+          padding:16px;
+          font-size:18px;
+          color: white;
+          font-family: "Lucida Console", Monaco, monospace;
+          line-height: 20px;
         }
 
       </style>
@@ -132,17 +131,22 @@ class MyView1 extends PolymerElement {
           </template>
         
           <template is="dom-if" if="{{demo}}">
-            <h3>&lt;Blox-Mnemonic> Demo</h3>
+            <h3>&lt;blox-mnemonic> Demo</h3>
             <p>We are going to generate a Mnemonic recovery phrase which is a series of 12 words, and conforms to the BIP39 specification. Mnemonic's are often used as password backups for wallets.</p>
-            <p>Each webcomponet looks just like a normal HTML tag</p>
-            <p> as well as the usual id="" or src="" properties, we can see the property 'password' has been added, this is what we will link up to the value of the input field</p>
+            <p>Each webcomponet looks and behaves just like all other HTML tags you know and love.</p>
+            <div class="code">
+              &lt;blox-mnemonic>&lt;/blox-mnemonic></br>
+            </div>
+            <p>Below we can see the property 'password' has been added.</p>
+            <p>Note that we can pass values around with curly brackets, we have linked up 'password' from the input to blox-mnemonic.</p>
             <div class="code">
               &lt;blox-mnemonic password="{password}" result="{result}">&lt;/blox-mnemonic></br>
               Password: &lt;input type="password" value="{password}"></br>
               Mnemonic: &lt;p>{result}&lt;/p></br>
             </div>
             <p> Above you will also notice we have added a 'result' property, this is where the component will hand back the mnemonic, for this demo we will link this to a paragraph tag.</p>
-            <p> Thats it, just 3 lines of code for you! Lets see it rendered to the DOM below.</p>
+            <p> As the user types the input is fed in to the blox-mnemonic component, as soon as 8 charectos has been entered the result will start to flow out and into the paragraph</p>
+            <p> Thats it, just 3 lines of HTML. Let's see it rendered to the DOM below.</p>
           </template>
         </div> 
       </div>
