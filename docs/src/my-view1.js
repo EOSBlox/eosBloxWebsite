@@ -113,6 +113,7 @@ class MyView1 extends PolymerElement {
           <b>Next up we are focusing on transfers...</b>
 
           <ul>
+            <li>Get Ballance for an Identity</li>
             <li>Transfer EOS Tokens</li>
             <li>Muti Signature Transfers</li>
             <li>Escrow Transfers</li>
