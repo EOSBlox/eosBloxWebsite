@@ -107,7 +107,7 @@ class MyView1 extends PolymerElement {
         <h2 class="header">EOS Blox is the worlds first suite of web components specifically for the creative developement of EOS DApps. </h2> 
         <div class="content">
         
-        Web components are like building blocks, you make a few components that perform a single task and then join them together into a new component, significantly accelerate development times and shortern the learning curve. 
+        Web components are like building blocks, you make a few components that perform a single task and then join them together into a single new component, this approach significantly accelerate development times, shorterns the learning curve and stops duplicate code from being writen, of which the side effect is happy developers! 
         We lovingly craft each reusable components to form the building blocks of your next EOS DApp.  
         EOS Blox allow you to keep all the style and expression that makes your dapp unique to you, yet provide you with common components that you can re-use. Web components run nativly in the browser </br></br></br>
 
