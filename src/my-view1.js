@@ -126,6 +126,3 @@ class MyView1 extends PolymerElement {
 }
 
 window.customElements.define('my-view1', MyView1);
-
-
-that 
