@@ -16,8 +16,14 @@ class MyView1 extends PolymerElement {
       <style include="shared-styles">
         :host {
           display: block;
-
-          padding: 10px;
+          border:0; 
+          margin:0; 
+          padding:0
+        }
+        .card {
+          border:0; 
+          margin:0; 
+          padding:0
         }
       </style>
 
@@ -32,4 +38,6 @@ class MyView1 extends PolymerElement {
 
 }
 
-window.customElements.define('my-view1', MyView1);
+window.customElements.define('my-view1', MyView1); // padding: 10px;
+// max-width:1100px;
+// margin: 0px auto;

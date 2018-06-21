@@ -34,11 +34,6 @@ class MyApp extends PolymerElement {
           margin: 0px auto;
         }
 
-        iron-pages {
-          max-width:1100px;
-          margin: 0px auto;  
-        }
-
         app-header {
           color: --app-secondary-color;
           background-color: #FFFFFF;
