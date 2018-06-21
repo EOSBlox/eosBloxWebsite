@@ -99,7 +99,7 @@ class MyView1 extends PolymerElement {
       </div> 
       <div class="container">
         <h1 class="title">About EOS Blox.</h1> 
-        <h2 class="header">EOS Blox makes the worlds first suite of web components specifically for the creative developement of EOS DApps. </h2> 
+        <h2 class="header">EOS Blox is the worlds first suite of web components specifically for the creative developement of EOS DApps. </h2> 
         <div class="content">
         
         Web components are like building blocks, you make a few components that perform a single task and then join them together into a new component, significantly accelerate development times and shortern the learning curve. 
