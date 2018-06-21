@@ -87,6 +87,12 @@ class MyView1 extends PolymerElement {
           font-family: "Lucida Console", Monaco, monospace;
           line-height: 20px;
         }
+        .code .red {
+          color: #FF5D6B
+        }
+        .code .blue {
+          color: #00A0CA
+        }
 
       </style>
       <div class="jumbo">
@@ -137,16 +143,19 @@ class MyView1 extends PolymerElement {
             <div class="code">
               &lt;blox-mnemonic>&lt;/blox-mnemonic></br>
             </div>
-            <p>Below we can see the property 'password' has been added.</p>
-            <p>Note that we can pass values around with curly brackets, we have linked up 'password' from the input to blox-mnemonic.</p>
+            <p>Below we can see the property 'password' and 'result' has been added.</p>
             <div class="code">
-              &lt;blox-mnemonic password="{password}" result="{result}">&lt;/blox-mnemonic></br>
-              Password: &lt;input type="password" value="{password}"></br>
-              Mnemonic: &lt;p>{result}&lt;/p></br>
+              &lt;blox-mnemonic password="{<span class="red">password</span>}" result="{<span class="blue">result</span>}">&lt;/blox-mnemonic></br>
             </div>
-            <p> Above you will also notice we have added a 'result' property, this is where the component will hand back the mnemonic, for this demo we will link this to a paragraph tag.</p>
-            <p> As the user types the input is fed in to the blox-mnemonic component, as soon as 8 charectos has been entered the result will start to flow out and into the paragraph</p>
+            <p>Note that we can pass values around with curly brackets, we have linked up 'password' from the input to blox-mnemonic, and result is linked to a paragraph tag. This is just one way we can pass in values and get data back.</p>
+            <div class="code">
+              &lt;blox-mnemonic password="{<span class="red">password</span>}" result="{<span class="blue">result</span>}">&lt;/blox-mnemonic></br>
+              Password: &lt;paper-input value="{<span class="red">password</span>}"></br>
+              Mnemonic: &lt;p>{<span class="blue">result</span>}&lt;/p></br>
+            </div>
+            <p> blox-mnemonic will only accept a password of 8 charectors or more, as the user types the input is fed in to the blox-mnemonic component, the result will start to flow out and into the paragraph, this all happens in real-time</p>
             <p> Thats it, just 3 lines of HTML. Let's see it rendered to the DOM below.</p>
+
           </template>
         </div> 
       </div>
