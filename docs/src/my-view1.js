@@ -65,7 +65,7 @@ class MyView1 extends PolymerElement {
           margin: 0px auto;
         }
         .container .title {
-          font-size:45px;
+          font-size:55px;
           font-weight:700;
           width:100%;
           padding:60px 0 0 0;
@@ -87,15 +87,37 @@ class MyView1 extends PolymerElement {
       <div class="jumbo-container">
         <img src="../images/block-white.svg">
         <div class="wrapper">
-          <div class="title">Web Components for EOS</div>
-          <div class="subtitle">Building blocks for amazing DApps</div>
+          <div class="title">A suite of web components.</div>
+
         </div>
         </div>
       </div> 
       <div class="container">
-        <div class="title">About Blox.</div> 
-        <div class="header">Blox is the worlds first and only suite of EOS web components. We build reusable webcomponents that accelerate EOS DApp development.</div> 
-        <div class="content">Built out of necescity and with love, we want to save other developers the need to rewite the common parts of modern DAp development.</div> 
+        <div class="title">About EOS Blox.</div> 
+        <div class="header">EOS Blox is the worlds first and only suite of EOS web components. </br>
+          We lovingly craft reusable components that will form the building blocks of your next EOS DApp.</div> 
+        <div class="content">Web components accelerate EOS DApp development while significantly lowetring the skill to entry. 
+          Built out of necescity and with love, we want to save other developers the need to rewite the common parts of modern DApp development.
+          EOS Blox allow you to keep all the style and expression that makes your dapp unique. </br></br>
+          <b>We are curently working on account management...</b>
+
+          <ul>
+            <li>Secure Account Creation</li>
+            <li>Identity Management</li>
+            <li>Create Backup Keyfiles & Restore</li>
+            <li>Print Paper Wallets for each identity</li>
+            <li>Scatter Integration</li>
+            
+          </ul>
+
+          <b>Next up we are focusing on transfers...</b>
+
+          <ul>
+            <li>Transfer EOS Tokens</li>
+            <li>Muti Signature Transfers</li>
+            <li>Escrow Transfers</li>
+          </ul>
+        </div> 
       </div>
     `;
   }
@@ -103,3 +125,4 @@ class MyView1 extends PolymerElement {
 }
 
 window.customElements.define('my-view1', MyView1);
+that;
