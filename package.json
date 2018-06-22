@@ -9,7 +9,7 @@
     "start": "polymer serve",
     "lint": "polymer lint",
     "test": "polymer test",
-    "build": "npm run deldocs && polymer build --add-service-worker && npm run move ",
+    "build": "npm run deldocs && polymer build --add-service-worker && npm run move && npm run delbuild",
     "move": "mv ./build/default/* ./docs/ && npm run delbuild",
     "deldocs": "if [ -d 'docs/' ]; then rm -Rf docs/; fi && mkdir docs/",
     "delbuild": "if [ -d 'build/' ]; then rm -Rf build/; fi",
