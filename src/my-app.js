@@ -92,9 +92,9 @@ class MyApp extends PolymerElement {
 
           <app-header slot="header" condenses="" reveals="" effects="waterfall" fixed="">
             <app-toolbar>
-              <template is="dom-if" if="{{!desktop}}">
-                <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-              </template>
+              <!-- <template is="dom-if" if="{{!desktop}}">
+                <paper-icon-button icon="my-icons:menu" drawer-toggle="" name="menu"></paper-icon-button>
+              </template> -->
               <div main-title="" class="center">EOS <span class="bold">BLOX</span></div>
             </app-toolbar>
           </app-header>
