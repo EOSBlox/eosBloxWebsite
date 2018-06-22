@@ -155,7 +155,7 @@ class MyView1 extends PolymerElement {
               Password: &lt;paper-input value="{<span class="red">password</span>}"></br>
               Mnemonic: &lt;p>{<span class="blue">result</span>}&lt;/p></br>
             </div>
-            <p> blox-mnemonic will only accept a password of 8 characters or more, as the user types the input is fed in to the blox-mnemonic component, the result will start to flow out and into the paragraph, this all happens in real-time</p>
+            <p> blox-mnemonic will only accept a password of 8 characters or more, as the you type the passwprd is fed in to the blox-mnemonic component, the result will start to flow out and into the paragraph, this all happens in near real-time, this is all done in the browser no data is being sent over the internet to an API</p>
             <p> Thats it, just 3 lines of HTML. Let's see it rendered to the DOM below.</p>
 
             <div class="card" style="margin:0">
