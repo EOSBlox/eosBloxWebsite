@@ -13,7 +13,7 @@
     "move": "mv ./build/default/* ./docs/ && npm run delbuild",
     "deldocs": "if [ -d 'docs/' ]; then rm -Rf docs/; fi && mkdir docs/",
     "delbuild": "if [ -d 'build/' ]; then rm -Rf build/; fi",
-    "test:integration": "polymer build # test that psk builds without error with the CLI"
+    "test:integration": "polymer build"
   },
   "dependencies": {
     "@polymer/app-layout": "^3.0.0-pre.15",
