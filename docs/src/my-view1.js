@@ -1,4 +1,6 @@
 import { PolymerElement, html } from "../node_modules/@polymer/polymer/polymer-element.js";
+import "../node_modules/@polymer/paper-input/paper-input.js";
+import "../node_modules/blox-mnemonic/blox-mnemonic.js";
 import './shared-styles.js';
 
 class MyView1 extends PolymerElement {
@@ -143,18 +145,24 @@ class MyView1 extends PolymerElement {
             <div class="code">
               &lt;blox-mnemonic>&lt;/blox-mnemonic></br>
             </div>
-            <p>Below we can see the property 'password' and 'result' has been added.</p>
+            <p>Below we can see the property 'password' and 'mnemonic' has been added.</p>
             <div class="code">
-              &lt;blox-mnemonic password="{<span class="red">password</span>}" result="{<span class="blue">result</span>}">&lt;/blox-mnemonic></br>
+              &lt;blox-mnemonic password="{<span class="red">password</span>}" mnemonic="{<span class="blue">mnemonic</span>}">&lt;/blox-mnemonic></br>
             </div>
-            <p>Note that we can pass values around with curly brackets, we have linked up 'password' from the input to blox-mnemonic, and result is linked to a paragraph tag. This is just one way we can pass in values and get data back.</p>
+            <p>Note that we can pass values around with curly brackets, we have linked up 'password' from the input to blox-mnemonic, and 'mnemonic' is linked to a paragraph tag. This is just one way we can pass in values and get data back.</p>
             <div class="code">
-              &lt;blox-mnemonic password="{<span class="red">password</span>}" result="{<span class="blue">result</span>}">&lt;/blox-mnemonic></br>
+              &lt;blox-mnemonic password="{<span class="red">password</span>}" mnemonic="{<span class="blue">mnemonic</span>}">&lt;/blox-mnemonic></br>
               Password: &lt;paper-input value="{<span class="red">password</span>}"></br>
               Mnemonic: &lt;p>{<span class="blue">result</span>}&lt;/p></br>
             </div>
-            <p> blox-mnemonic will only accept a password of 8 charectors or more, as the user types the input is fed in to the blox-mnemonic component, the result will start to flow out and into the paragraph, this all happens in real-time</p>
+            <p> blox-mnemonic will only accept a password of 8 characters or more, as the user types the input is fed in to the blox-mnemonic component, the result will start to flow out and into the paragraph, this all happens in real-time</p>
             <p> Thats it, just 3 lines of HTML. Let's see it rendered to the DOM below.</p>
+
+            <div class="card" style="margin:0">
+            <blox-mnemonic password="{{password}}" mnemonic="{{mnemonic}}"></blox-mnemonic>
+            <paper-input label="Password (greater than 7 characters)" type="password" value="{{password}}"></paper-input>
+            <p><b><span class="red">{{mnemonic}}</span></b></p>
+            </div>
 
           </template>
         </div> 
