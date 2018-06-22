@@ -99,7 +99,7 @@ class MyView1 extends PolymerElement {
       </style>
       <div class="jumbo">
       <div class="jumbo-container">
-        <img src="../images/block-white.svg">
+        <img src="../images/block-white.svg" alt="logo depicing a block">
         <div class="title">A suite of web components.
         </div>
         </div>
