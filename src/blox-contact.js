@@ -1,5 +1,4 @@
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js'
-import '@polymer/paper-input/paper-input.js';
 import '@polymer/app-route/app-location.js';
 import './components/blox-header.js';
 import './components/blox-footer.js';
