@@ -13,6 +13,21 @@ class BloxContact extends PolymerElement {
         :host {
           display: block;
         }
+        .component-container{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .component{
+          background-color: white;
+          border: 1px solid #E9ECEF;
+          border-radius: 4px;
+          width: 270px;
+          padding: 20px 20px 20px 20px;
+          margin: 10px 10px 0 0;
+        }
+        .description {
+          font-size: 14px;
+        }
       </style>
 
       <div class="container green-bg">
@@ -24,6 +39,31 @@ class BloxContact extends PolymerElement {
       </div>
       <div class="container white-bg">
         <div class="innerContainer">
+          <blox-spacer space="90"></blox-spacer>
+          <h4>Get In Touch</h4>
+          <div class="component-container">
+
+            <div class="component">
+              <div class="title">Press & Ediorial</div>
+              <p class="description">If you are a journalist and want to write about EOS Blox</p>
+              <p class="email"><a href="mailto:press@eosblox.com">press@eosblox.com</a></p>
+            </div>
+
+            <div class="component">
+              <div class="title">Business Inquiries</div>
+              <p class="description">If you are managing a business and want to partner with EOS Blox</p>
+              <p class="email"><a href="mailto:biz@eosblox.com">biz@eosblox.com</a></p>
+            </div>
+
+            <div class="component">
+              <div class="title">General Inquiries</div>
+              <p class="description">For general questions about EOS Blox</p>
+              <p class="email"><a href="mailto:hello@eosblox.com">hello@eosblox.com</a></p>
+            </div>
+
+          </div>
+          <blox-spacer space="90"></blox-spacer>
+        </div>
       </div>
       <div class="container darkBlue-bg">
         <div class="innerContainer">

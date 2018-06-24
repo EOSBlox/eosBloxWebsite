@@ -1,6 +1,5 @@
 import { PolymerElement, html } from "../node_modules/@polymer/polymer/polymer-element.js";
 import { setPassiveTouchGestures, setRootPath } from "../node_modules/@polymer/polymer/lib/utils/settings.js";
-import "../node_modules/@polymer/app-layout/app-scroll-effects/app-scroll-effects.js";
 import "../node_modules/@polymer/iron-selector/iron-selector.js";
 import "../node_modules/@polymer/app-route/app-location.js";
 import "../node_modules/@polymer/app-route/app-route.js";
@@ -13,8 +12,8 @@ class BloxApp extends PolymerElement {
     return html`
       <style>
         :host {
-          --app-primary-color: #F3D879;
-          --app-secondary-color: #3D4956;
+          --app-primary-color: #3D6D9A;
+          --app-secondary-color: #E8EAEE;
           display: block;
         }
         .pages{
@@ -36,20 +35,20 @@ class BloxApp extends PolymerElement {
           transition: 0.3s;
           transition-timing-function: easeOutQuint;
         }
-        .drawer-list {
+        .side-menu {
           margin: 0 20px;
           min-width: 280px;
           overflow:hidden;
           display: block;
         }
-        .drawer-list a {
+        .side-menu a {
           display: block;
           padding: 0 16px;
           text-decoration: none;
           color: #616264;
           line-height: 40px;
         }
-        .drawer-list a.iron-selected {
+        .side-menu a.iron-selected {
           color: #C4C6CE;
           font-weight: bold;
         }
@@ -71,7 +70,7 @@ class BloxApp extends PolymerElement {
       </iron-pages>
 
       <div class="sideMenu">
-        <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
+        <iron-selector selected="[[page]]" attr-for-selected="name" class="side-menu" role="navigation">
             <a name="about" href="[[rootPath]]about" on-click="_sideMenuClose">What is EOS Blox</a>
             <a name="portfolio" href="[[rootPath]]portfolio" on-click="_sideMenuClose">EOS Web Components</a>
             <a name="team" href="[[rootPath]]team" on-click="_sideMenuClose">Meat The Team</a>
