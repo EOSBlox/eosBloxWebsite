@@ -18,14 +18,11 @@ class BloxContact extends PolymerElement {
           flex-wrap: wrap;
         }
         .component{
-          background-color: white;
-          border: 1px solid #E9ECEF;
-          border-radius: 4px;
           width: 270px;
           padding: 20px 20px 20px 20px;
-          margin: 10px 10px 0 0;
+          margin: 20px 20px 0 0;
         }
-        .description {
+        .description, .email {
           font-size: 14px;
         }
       </style>
@@ -45,7 +42,7 @@ class BloxContact extends PolymerElement {
 
             <div class="component">
               <div class="title">Press & Ediorial</div>
-              <p class="description">If you are a journalist and want to write about EOS Blox</p>
+              <p class="description">If you are a journalist and want to write about or interview EOS Blox</p>
               <p class="email"><a href="mailto:press@eosblox.com">press@eosblox.com</a></p>
             </div>
 
@@ -57,7 +54,7 @@ class BloxContact extends PolymerElement {
 
             <div class="component">
               <div class="title">General Inquiries</div>
-              <p class="description">For general questions about EOS Blox</p>
+              <p class="description">For general questions about EOS Blox drop us a line</p>
               <p class="email"><a href="mailto:hello@eosblox.com">hello@eosblox.com</a></p>
             </div>
 
