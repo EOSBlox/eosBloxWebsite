@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="68px" height="80px" viewBox="0 0 68 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>noun_1435588_cc</title>
+    <title>block-white</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <g id="noun_1435588_cc" transform="translate(3.000000, 4.000000)" stroke="#FFFFFF" stroke-width="6">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="block-white" transform="translate(3.000000, 4.000000)" stroke="#8E99A5" stroke-width="6">
             <polygon id="Shape" points="62 18.0042604 31 0 0 18.0042604 0 54.0042604 31 72 62 54.0042604"></polygon>
             <path d="M0,18 L31,36" id="Shape"></path>
             <path d="M31,36 L62,18" id="Shape"></path>

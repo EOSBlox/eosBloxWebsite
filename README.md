@@ -32,8 +32,8 @@ Install [Polymer CLI](https://github.com/Polymer/polymer-cli) using
 
 ##### Initialize project from template
 
-    mkdir my-app
-    cd my-app
+    mkdir blox-app
+    cd blox-app
     polymer init polymer-3-starter-kit
 
 ### Start the development server

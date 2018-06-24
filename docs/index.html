@@ -26,27 +26,26 @@
     <meta property="og:url" content="https://www.eosblox.com/">
     <meta property="og:image" content="https://www.eosblox.com/images/referrer.png">
     <meta property="og:description" content="Webcomponents for building great EOS DApps.">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;text=EOS%20BLOX" rel="stylesheet">
-    <script>window.MyAppGlobals = {
+       <script>window.BloxAppGlobals = {
   rootPath: '/'
 };
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
     navigator.serviceWorker.register('service-worker.js', {
-      scope: MyAppGlobals.rootPath
+      scope: BloxAppGlobals.rootPath
     });
   });
 }</script>
     <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script type="module" src="src/my-app.js"></script>
+    <script type="module" src="src/blox-app.js"></script>
     <style>
       body {
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', "Helvetica Neue", sans-serif;
         line-height: 1.5;
         min-height: 100vh;
-        background-color: #EBECED;
+        background-color: #36414B;
         letter-spacing: 0;
         font-weight: 300;
         font-style: normal;
@@ -54,16 +53,16 @@ if ('serviceWorker' in navigator) {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         -moz-font-feature-settings: "liga" on;
-        line-height: 1.4;
+
       }
     </style>
   </head>
   <body>
-    <my-app></my-app>
+    <blox-app></blox-app>
     <noscript>
       Please enable JavaScript to view this awesome website.
     </noscript>
-    <!-- Built with love bt EOS Blox -->
+    <!-- Built with love by EOS Blox -->
   
 
 </body></html>
