@@ -101,8 +101,8 @@ class BloxApp extends PolymerElement {
     return ['_routePageChanged(routeData.page)'];
   }
 
-  ready() {
-    super.ready();
+  constructor() {
+    super();
     window.addEventListener('sideMenu', () => this._sideMenuOpen());
   }
 

@@ -104,10 +104,12 @@ class BloxApp extends PolymerElement {
     ];
   }
 
-  ready() {
-    super.ready();
+  constructor() {
+    super();
     window.addEventListener('sideMenu', () => this._sideMenuOpen());
   }
+
+  
   _sideMenuOpen(){ 
     if(this.sideMenu == true){
       this._sideMenuClose();
