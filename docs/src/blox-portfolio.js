@@ -23,6 +23,15 @@ class bloxPortfolio extends PolymerElement {
           display: flex;
           flex-wrap: wrap;
         }
+        .component img {
+          width: 25px;
+          height: 25px;
+          opacity: 0.4;
+          padding-right: 4px;
+        }
+        .version{
+          font-size:12px;
+        }
       </style>
 
       <div class="container blue-bg">
@@ -41,7 +50,10 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Random</div>
+              <div class="version">1.0.0</div>
               <p class="description">Generates a random string or number of a specified length</p>
+              <img src="../images/github.svg">
+              <img src="../images/npm.svg">
             </div>
 
             <div class="component">
