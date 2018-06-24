@@ -57,8 +57,7 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
       font-size:28px;
       margin:0 auto;
       width:auto;
-      text-align:center;
-      padding: 85px 50px 50px 50px;
+      padding: 85px 0 50px 0;
       color: #373D47;
     }
     small {
@@ -88,6 +87,7 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
       text-transform: uppercase;
       outline: none;
       cursor: pointer;
+      margin-top:60px;
     }
     </style>
   </template>
