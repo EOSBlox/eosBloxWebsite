@@ -44,7 +44,7 @@ class bloxPortfolio extends PolymerElement {
       <div class="container white-bg">
         <div class="innerContainer">
         <blox-spacer space="90"></blox-spacer>
-        <h4>Our preciouss</h4>
+        <h4>Our precious</h4>
           <div class="component-container">
 
 
