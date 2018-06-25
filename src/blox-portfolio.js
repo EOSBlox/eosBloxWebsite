@@ -50,10 +50,10 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Random</div>
-              <div class="version">1.0.0</div>
+              <div class="version">v1.0.0</div>
               <p class="description">Generates a random string or number of a specified length</p>
-              <img src="../images/github.svg">
-              <img src="../images/npm.svg">
+              <a href="https://github.com/EOSBlox/blox-random" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-random" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
@@ -64,11 +64,15 @@ class bloxPortfolio extends PolymerElement {
             <div class="component">
               <div class="title">Blox-Mnemonic</div>
               <p class="description">Generates a random or from password 12 word Mnemonic phrase </p>
+              <a href="https://github.com/EOSBlox/blox-mnemonic" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-mnemonic" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
               <div class="title">Blox-Scrypt</div>
               <p class="description">Generates a hash using the Scrypt KDF </p>
+              <a href="https://github.com/EOSBlox/blox-scrypt" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-scrypt" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
