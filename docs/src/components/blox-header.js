@@ -46,9 +46,12 @@ class BloxHeader extends PolymerElement {
           height:10px;
           padding-left: 3px;
         }
+        a {
+          text-decoration: none;
+        }
       </style>
       <div class="main">
-        <h1 class="logo">EOS <span>BLOX</span></h1>
+        <a href="https://www.eosblox.com/"><h1 class="logo">EOS <span>BLOX</span></h1></a>
         <div class="grow"></div>
         <div class="menu" on-click="_openMenu" on-mouseover="_openx" on-mouseout="_closex">
           <div>MENU</div> 
