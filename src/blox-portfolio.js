@@ -57,8 +57,11 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
             <div class="component">
-              <div class="title">Blox-Secure</div>
-              <p class="description">Generates a secure AES based encrypted object</p>
+              <div class="title">Blox-Scrypt</div>
+              <div class="version">v1.0.0</div>
+              <p class="description">Generates a hash using the Scrypt KDF </p>
+              <a href="https://github.com/EOSBlox/blox-scrypt" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-scrypt" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
@@ -70,11 +73,8 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
             <div class="component">
-              <div class="title">Blox-Scrypt</div>
-              <div class="version">v1.0.0</div>
-              <p class="description">Generates a hash using the Scrypt KDF </p>
-              <a href="https://github.com/EOSBlox/blox-scrypt" target="_blank"><img src="../images/github.svg"></a>
-              <a href="https://www.npmjs.com/package/blox-scrypt" target="_blank"><img src="../images/npm.svg"></a>
+              <div class="title">Blox-Secure</div>
+              <p class="description">Generates a secure AES based encrypted object</p>
             </div>
 
             <div class="component">
