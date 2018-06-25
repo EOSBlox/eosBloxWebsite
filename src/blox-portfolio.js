@@ -63,6 +63,7 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Mnemonic</div>
+              <div class="version">v1.0.0</div>
               <p class="description">Generates a random or from password 12 word Mnemonic phrase </p>
               <a href="https://github.com/EOSBlox/blox-mnemonic" target="_blank"><img src="../images/github.svg"></a>
               <a href="https://www.npmjs.com/package/blox-mnemonic" target="_blank"><img src="../images/npm.svg"></a>
@@ -70,6 +71,7 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Scrypt</div>
+              <div class="version">v1.0.0</div>
               <p class="description">Generates a hash using the Scrypt KDF </p>
               <a href="https://github.com/EOSBlox/blox-scrypt" target="_blank"><img src="../images/github.svg"></a>
               <a href="https://www.npmjs.com/package/blox-scrypt" target="_blank"><img src="../images/npm.svg"></a>
