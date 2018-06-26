@@ -74,7 +74,10 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Secure</div>
+              <div class="version">v1.0.0</div>
               <p class="description">Generates a secure AES based encrypted object</p>
+              <a href="https://github.com/EOSBlox/blox-secure" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-secure" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
