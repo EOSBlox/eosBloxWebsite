@@ -72,8 +72,8 @@ class BloxApp extends PolymerElement {
       <div class="sideMenu">
         <iron-selector selected="[[page]]" attr-for-selected="name" class="side-menu" role="navigation">
             <a name="about" href="[[rootPath]]about" on-click="_sideMenuClose">What is EOS Blox</a>
-            <a name="portfolio" href="[[rootPath]]portfolio" on-click="_sideMenuClose">EOS Web Components</a>
-            <a name="team" href="[[rootPath]]team" on-click="_sideMenuClose">Meat The Team</a>
+            <a name="portfolio" href="[[rootPath]]portfolio" on-click="_sideMenuClose">Our Web Components</a>
+            <a name="team" href="[[rootPath]]team" on-click="_sideMenuClose">Meet The Team</a>
             <a name="contact" href="[[rootPath]]contact" on-click="_sideMenuClose">Get In Touch</a>
           </iron-selector>
       </div>

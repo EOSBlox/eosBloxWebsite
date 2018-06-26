@@ -92,22 +92,22 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Account</div>
-              <p class="description">Generates a Paper Wallet from a private key</p>
+              <p class="description">Generates a a user account capable of many identities</p>
             </div>
 
             <div class="component">
               <div class="title">Blox-Identity</div>
-              <p class="description">Generates a Paper Wallet from a private key</p>
+              <p class="description">Generates an identity within an account</p>
             </div>
 
             <div class="component">
               <div class="title">Blox-Backup</div>
-              <p class="description">Generates a Paper Wallet from a private key</p>
+              <p class="description">Generates a back up file that is downloaded by the user</p>
             </div>
 
             <div class="component">
               <div class="title">Blox-Restore</div>
-              <p class="description">Generates a Paper Wallet from a private key</p>
+              <p class="description">Generates a file upload for the user to restore an acocunt</p>
             </div>
 
 
