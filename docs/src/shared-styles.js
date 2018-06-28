@@ -58,6 +58,9 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
       padding: 85px 0 50px 0;
       color: #373D47;
     }
+    h4 {
+      margin-bottom: 0px;
+    }
     small {
       width: 100%;
       font-weight:400;
