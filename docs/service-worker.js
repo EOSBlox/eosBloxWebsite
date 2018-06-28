@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["index.html","01d2e43432d78310d2454dc62a6877da"],["manifest.json","1845171d3c4fe9ebe6a48852f4347b34"],["src/blox-about.js","18717e34ccc6baa130fe564e959d7238"],["src/blox-app.js","1723a272567be8701109ccb3aa313042"],["src/blox-contact.js","bab1fca18d8b640aa4be2b962fb81309"],["src/blox-portfolio.js","f69493727638d9c6e6dc690478268e6a"],["src/blox-team.js","4034ab2c160dbb96e18048e7644f0ddb"],["src/components/blox-footer.js","62588fcad2837a5d774831cb08f3a082"],["src/components/blox-header.js","08497bbf9eb6ba7d95fd55d14b914d33"],["src/components/blox-spacer.js","436f4d83b620fce0832721525ce41df1"],["src/shared-styles.js","29a1cfaeb1feea315397213d6a2ba7dc"]];
+var precacheConfig = [["index.html","01d2e43432d78310d2454dc62a6877da"],["manifest.json","1845171d3c4fe9ebe6a48852f4347b34"],["src/blox-about.js","18717e34ccc6baa130fe564e959d7238"],["src/blox-app.js","1723a272567be8701109ccb3aa313042"],["src/blox-contact.js","bab1fca18d8b640aa4be2b962fb81309"],["src/blox-portfolio.js","476c86e56f8342ebf6ca24cda93ea21c"],["src/blox-team.js","4034ab2c160dbb96e18048e7644f0ddb"],["src/components/blox-footer.js","62588fcad2837a5d774831cb08f3a082"],["src/components/blox-header.js","08497bbf9eb6ba7d95fd55d14b914d33"],["src/components/blox-spacer.js","436f4d83b620fce0832721525ce41df1"],["src/shared-styles.js","29a1cfaeb1feea315397213d6a2ba7dc"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
