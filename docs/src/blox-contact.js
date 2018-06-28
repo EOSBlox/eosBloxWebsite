@@ -1,13 +1,4 @@
-import { PolymerElement, html } from "../node_modules/@polymer/polymer/polymer-element.js";
-import "../node_modules/@polymer/app-route/app-location.js";
-import './components/blox-header.js';
-import './components/blox-footer.js';
-import './components/blox-spacer.js';
-import './shared-styles.js';
-
-class BloxContact extends PolymerElement {
-  static get template() {
-    return html`
+define(["./blox-app.js"],function(_bloxApp){"use strict";class BloxContact extends _bloxApp.PolymerElement{static get template(){return _bloxApp.html`
       <style include="shared-styles">
         :host {
           display: block;
@@ -67,16 +58,4 @@ class BloxContact extends PolymerElement {
         </div>
       </div>
 
-    `;
-  }
-
-  _openMenu() {
-    this.dispatchEvent(new CustomEvent('sideMenu', {
-      bubbles: true,
-      composed: true
-    }));
-  }
-
-}
-
-window.customElements.define('blox-contact', BloxContact);
+    `}_openMenu(){this.dispatchEvent(new CustomEvent("sideMenu",{bubbles:!0,composed:!0}))}}window.customElements.define("blox-contact",BloxContact)});

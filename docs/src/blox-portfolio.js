@@ -1,12 +1,4 @@
-import { PolymerElement, html } from "../node_modules/@polymer/polymer/polymer-element.js";
-import './components/blox-header.js';
-import './components/blox-footer.js';
-import './components/blox-spacer.js';
-import './shared-styles.js';
-
-class bloxPortfolio extends PolymerElement {
-  static get template() {
-    return html`
+define(["./blox-app.js"],function(_bloxApp){"use strict";class bloxPortfolio extends _bloxApp.PolymerElement{static get template(){return _bloxApp.html`
       <style include="shared-styles">
         :host {
           display: block;
@@ -173,16 +165,4 @@ class bloxPortfolio extends PolymerElement {
         </div>
       </div>
 
-    `;
-  }
-
-  _openMenu() {
-    this.dispatchEvent(new CustomEvent('sideMenu', {
-      bubbles: true,
-      composed: true
-    }));
-  }
-
-}
-
-window.customElements.define('blox-portfolio', bloxPortfolio);
+    `}_openMenu(){this.dispatchEvent(new CustomEvent("sideMenu",{bubbles:!0,composed:!0}))}}window.customElements.define("blox-portfolio",bloxPortfolio)});

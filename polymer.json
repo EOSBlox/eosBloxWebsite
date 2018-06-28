@@ -2,7 +2,9 @@
   "entrypoint": "index.html",
   "shell": "src/blox-app.js",
   "sources": [
-    "images/**/*"
+    "images/**/*", 
+    "404.html",
+    "CNAME"
   ],
   "extraDependencies": [
     "manifest.json",

@@ -154,7 +154,7 @@ class BloxApp extends PolymerElement {
         import('./blox-about.js');
         break;
       case 'portfolio':
-        import('./blox-portfolio');
+        import('./blox-portfolio.js');
         break;
       case 'team':
         import('./blox-team.js');
