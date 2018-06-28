@@ -47,7 +47,8 @@ class BloxApp extends PolymerElement {
           padding: 0 16px;
           text-decoration: none;
           color: #616264;
-          line-height: 40px;
+          line-height: 30px;
+          font-weight: 700;
         }
         .side-menu a.iron-selected {
           color: #C4C6CE;
