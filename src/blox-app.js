@@ -139,6 +139,7 @@ class BloxApp extends PolymerElement {
     }
   }
   _routePageChanged(page) {
+    console.log(page)
     if (!page) {
       this.page = 'about';
     } else if (['about', 'portfolio', 'team', 'contact'].indexOf(page) !== -1) {
@@ -161,8 +162,12 @@ class BloxApp extends PolymerElement {
       case 'contact':
         import('./blox-contact.js');
         break;
+      case 'view404':
+        import('./my-view404.js');
+        break;
     }
   }
+
 } window.customElements.define('blox-app', BloxApp);
 
 
