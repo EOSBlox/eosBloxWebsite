@@ -289,7 +289,7 @@ define(["exports","meta","require"],function(_exports,meta,_require){"use strict
         <div class="grow"></div>
         <div class="menu" on-click="_openMenu" on-mouseover="_openx" on-mouseout="_closex">
           <div>MENU</div> 
-          <div><img src="../images/menu-{{theme}}-{{over}}.svg" class="open"></div>
+          <div><img src="../images/menu-{{theme}}-{{over}}.svg" class="open" alt="menu icon"></div>
         </div>
       </div>
     `}_openMenu(){this.dispatchEvent(new CustomEvent("sideMenu",{bubbles:!0,composed:!0}))}static get properties(){return{theme:{type:String,observer:"_theme"},over:{type:String,value:"open"}}}_closex(event){event.preventDefault();if("closed"==this.over){this.over="open"}}_openx(event){event.preventDefault();if("open"==this.over){this.over="closed"}}_theme(){if("light"==this.theme){this.shadowRoot.querySelector(".logo").style.color="white";this.shadowRoot.querySelector(".menu").style.color="white"}else{this.shadowRoot.querySelector(".logo").style.color="#494E58";this.shadowRoot.querySelector(".menu").style.color="#494E58"}}}window.customElements.define("blox-header",BloxHeader);class BloxSpacer extends PolymerElement{static get template(){return html`

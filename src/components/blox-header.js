@@ -55,7 +55,7 @@ class BloxHeader extends PolymerElement {
         <div class="grow"></div>
         <div class="menu" on-click="_openMenu" on-mouseover="_openx" on-mouseout="_closex">
           <div>MENU</div> 
-          <div><img src="../images/menu-{{theme}}-{{over}}.svg" class="open"></div>
+          <div><img src="../images/menu-{{theme}}-{{over}}.svg" class="open" alt="menu icon"></div>
         </div>
       </div>
     `;
