@@ -44,7 +44,7 @@ class bloxPortfolio extends PolymerElement {
       <div class="container white-bg">
         <div class="innerContainer">
         <blox-spacer space="90"></blox-spacer>
-        <h4>Our precious</h4>
+        <h4>Individual Blox</h4>
           <div class="component-container">
 
 
@@ -117,6 +117,16 @@ class bloxPortfolio extends PolymerElement {
               <p class="description">Generates a Paper Wallet from a private key</p>
             </div>
 
+
+          </div>
+
+
+          <blox-spacer space="90"></blox-spacer>
+
+
+          <h4>Combined Blox</h4>
+          <div class="component-container">
+
             <div class="component">
               <div class="title">Blox-Account</div>
               <p class="description">Generates a a user account capable of many identities</p>
@@ -128,6 +138,8 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
           </div>
+
+
           <blox-spacer space="90"></blox-spacer>
         </div>
       </div>
