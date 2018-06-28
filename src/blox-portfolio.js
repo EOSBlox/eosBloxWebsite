@@ -89,8 +89,13 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
             <div class="component">
-              <div class="title">Blox-Paper</div>
-              <p class="description">Generates a Paper Wallet from a private key</p>
+              <div class="title">Blox-Backup</div>
+              <p class="description">Generates a back up file that is downloaded by the user</p>
+            </div>
+
+            <div class="component">
+              <div class="title">Blox-Restore</div>
+              <p class="description">Generates a file upload for the user to restore an acocunt</p>
             </div>
 
             <div class="component">
@@ -104,14 +109,11 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
             <div class="component">
-              <div class="title">Blox-Backup</div>
-              <p class="description">Generates a back up file that is downloaded by the user</p>
+              <div class="title">Blox-Paper</div>
+              <p class="description">Generates a Paper Wallet from a private key</p>
             </div>
 
-            <div class="component">
-              <div class="title">Blox-Restore</div>
-              <p class="description">Generates a file upload for the user to restore an acocunt</p>
-            </div>
+
 
 
 
