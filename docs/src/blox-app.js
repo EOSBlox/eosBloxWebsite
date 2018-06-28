@@ -227,13 +227,13 @@ define(["exports","meta","require"],function(_exports,meta,_require){"use strict
      <div class="main">
         <div class="one-third">
           <div class="logo-container">
-            <div class="icon"><img src="../images/block-white.svg"></div>
+            <div class="icon"><img src="../images/block-white.svg" alt="logo depicting a block"></div>
             <div class="text">EOS <span>BLOX</span></div>
           </div>
         </div>
         <div class="two-thirds">
           <ul>
-            <li><a href="https://t.me/joinchat/F6JO5hCAfj3LBdDCkwcPCw" target="_blank">Telegram</a></li>
+            <li><a href="https://t.me/joinchat/F6JO5hCAfj3LBdDCkwcPCw" target="_blank" rel="noreferrer">Telegram</a></li>
             <li><a href="mailto:hello@eosblox.com">hello@eosblox.com</a></li>
           </ul>
         </div>
