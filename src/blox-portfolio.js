@@ -45,6 +45,7 @@ class bloxPortfolio extends PolymerElement {
         <div class="innerContainer">
         <blox-spacer space="90"></blox-spacer>
         <h4>Individual Blox</h4>
+        <p>Provide a single function that be can reused to create many combined blox</p>
           <div class="component-container">
 
 
@@ -125,6 +126,7 @@ class bloxPortfolio extends PolymerElement {
 
 
           <h4>Combined Blox</h4>
+          <p>Utilize the Individual blox to create a more complex reusable function</p>
           <div class="component-container">
 
             <div class="component">
