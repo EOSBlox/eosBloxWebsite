@@ -45,7 +45,7 @@ class bloxPortfolio extends PolymerElement {
         <div class="innerContainer">
         <blox-spacer space="90"></blox-spacer>
         <h4>Individual Blox</h4>
-        <p>Provide a single function that be can reused to create many combined blox</p>
+        <p>Provide a single component that be can reused to create many combined blox or used individually</p>
           <div class="component-container">
 
 
@@ -114,10 +114,24 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
             <div class="component">
-              <div class="title">Blox-Paper</div>
-              <p class="description">Generates a Paper Wallet from a private key</p>
+              <div class="title">Blox-Geohash</div>
+              <p class="description">Creates a geohash from a users location</p>
             </div>
 
+            <div class="component">
+              <div class="title">Blox-Avatar</div>
+              <p class="description">Upload, resize and rotate an avatar</p>
+            </div>
+
+            <div class="component">
+              <div class="title">Blox-Sign</div>
+              <p class="description">Signs any data given a private key</p>
+            </div>
+
+            <div class="component">
+              <div class="title">Blox-Keypair</div>
+              <p class="description">Creates two EOS keypairs</p>
+            </div>
 
           </div>
 
@@ -128,6 +142,14 @@ class bloxPortfolio extends PolymerElement {
           <h4>Combined Blox</h4>
           <p>Utilize the Individual blox to create a more complex reusable function</p>
           <div class="component-container">
+
+            <div class="component">
+              <div class="title">Blox-Paper</div>
+              <div class="version">v1.0.0</div>
+              <p class="description">Generates and prints a paper wallet from a private key</p>
+              <a href="https://github.com/EOSBlox/blox-paper" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-paper" target="_blank"><img src="../images/npm.svg"></a>
+            </div>
 
             <div class="component">
               <div class="title">Blox-Account</div>
