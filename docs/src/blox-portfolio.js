@@ -98,7 +98,15 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Restore</div>
+              <div class="version">v1.0.0</div>
               <p class="description">Generates a file upload for the user to restore an acocunt</p>
+              <a href="https://github.com/EOSBlox/blox-restore" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-restore" target="_blank"><img src="../images/npm.svg"></a>
+            </div>
+
+            <div class="component">
+              <div class="title">Blox-Paper</div>
+              <p class="description">Generates a Paper Wallet from a private key</p>
             </div>
 
             <div class="component">
@@ -110,15 +118,6 @@ class bloxPortfolio extends PolymerElement {
               <div class="title">Blox-Identity</div>
               <p class="description">Generates an identity within an account</p>
             </div>
-
-            <div class="component">
-              <div class="title">Blox-Paper</div>
-              <p class="description">Generates a Paper Wallet from a private key</p>
-            </div>
-
-
-
-
 
           </div>
           <blox-spacer space="90"></blox-spacer>
