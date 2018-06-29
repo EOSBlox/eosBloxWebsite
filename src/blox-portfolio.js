@@ -115,7 +115,10 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Geohash</div>
+              <div class="version">v1.0.0</div>
               <p class="description">Creates a geohash from a users location</p>
+              <a href="https://github.com/EOSBlox/blox-geohash" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-geohash" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
