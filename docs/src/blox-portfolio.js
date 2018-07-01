@@ -143,6 +143,11 @@ define(["./blox-app.js"],function(_bloxApp){"use strict";class bloxPortfolio ext
             </div>
 
             <div class="component">
+              <div class="title">Blox-Code</div>
+              <p class="description">Display blocks of JavaScript and WASM in a dark theme</p>
+            </div>
+
+            <div class="component">
               <div class="title">Blox-Transfer</div>
               <p class="description">Transfer a set amount of EOS</p>
             </div>
