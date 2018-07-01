@@ -131,12 +131,18 @@ class bloxPortfolio extends PolymerElement {
 
             <div class="component">
               <div class="title">Blox-Keypair</div>
+              <div class="version">v1.0.0</div>
               <p class="description">Creates two EOS keypairs</p>
+              <a href="https://github.com/EOSBlox/blox-keypair" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-keypair" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
               <div class="title">Blox-Sign</div>
+              <div class="version">v1.0.0</div>
               <p class="description">Signs any data given a private key</p>
+              <a href="https://github.com/EOSBlox/blox-sign" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-sign" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
