@@ -146,8 +146,30 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
             <div class="component">
+              <div class="title">Blox-Language</div>
+              <p class="description">Detect the users prefered language</p>
+            </div>
+
+            <div class="component">
               <div class="title">Blox-Transfer</div>
               <p class="description">Transfer a set amount of EOS</p>
+            </div>
+
+
+            <div class="component">
+              <div class="title">Blox-Account</div>
+              <p class="description">Creates a new EOS account</p>
+            </div>
+
+            <div class="component">
+              <div class="title">Blox-Contract</div>
+              <p class="description">Creates a new EOS account</p>
+            </div>
+
+
+            <div class="component">
+              <div class="title">Blox-Token</div>
+              <p class="description">Creates a new EOS token</p>
             </div>
 
 
@@ -171,13 +193,13 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
             <div class="component">
-              <div class="title">Blox-Account</div>
+              <div class="title">Blox-Wallet</div>
               <p class="description">Generates a a user account capable of many identities</p>
             </div>
 
             <div class="component">
               <div class="title">Blox-Identity</div>
-              <p class="description">Generates an identity within an account</p>
+              <p class="description">Generates an identity within a wallet</p>
             </div>
 
           </div>
