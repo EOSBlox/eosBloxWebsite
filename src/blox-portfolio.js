@@ -146,16 +146,6 @@ class bloxPortfolio extends PolymerElement {
             </div>
 
             <div class="component">
-              <div class="title">Blox-Language</div>
-              <p class="description">Detect the users prefered language</p>
-            </div>
-
-            <div class="component">
-              <div class="title">Blox-Code</div>
-              <p class="description">Display blocks of JavaScript and WASM in a dark theme</p>
-            </div>
-
-            <div class="component">
               <div class="title">Blox-Transfer</div>
               <p class="description">Transfer a set amount of EOS</p>
             </div>
@@ -209,6 +199,21 @@ class bloxPortfolio extends PolymerElement {
 
           </div>
 
+
+          <blox-spacer space="90"></blox-spacer>
+
+          <h4>Starter Kits</h4>
+          <p>Great starting points for your next EOS dApp</p>
+          <div class="component-container">
+
+            <div class="component">
+              <div class="title">Web App</div>
+              <div class="version">v1.0.0</div>
+              <p class="description">Generates a basic single page EOS dApp</p>
+              <a href="https://github.com/EOSBlox/blox-single" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-single" target="_blank"><img src="../images/npm.svg"></a>
+            </div>
+          </div>
 
           <blox-spacer space="90"></blox-spacer>
         </div>
