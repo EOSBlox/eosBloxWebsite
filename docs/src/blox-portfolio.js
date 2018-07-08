@@ -130,18 +130,17 @@ define(["./blox-app.js"],function(_bloxApp){"use strict";class bloxPortfolio ext
             </div>
 
             <div class="component">
-              <div class="title">Blox-Sign</div>
+              <div class="title">Blox-Connect</div>
               <div class="version">v1.0.0</div>
-              <p class="description">Signs any data given a private key</p>
-              <a href="https://github.com/EOSBlox/blox-sign" target="_blank"><img src="../images/github.svg"></a>
-              <a href="https://www.npmjs.com/package/blox-sign" target="_blank"><img src="../images/npm.svg"></a>
+              <p class="description">Connects to the EOS Blockchain</p>
+              <a href="https://github.com/EOSBlox/blox-chain" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-chain" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
-              <div class="title">Blox-Transfer</div>
-              <p class="description">Transfer a set amount of EOS</p>
+              <div class="title">Blox-Sign</div>
+              <p class="description">Signs any data given a private key</p>
             </div>
-
 
             <div class="component">
               <div class="title">Blox-Account</div>
@@ -153,6 +152,10 @@ define(["./blox-app.js"],function(_bloxApp){"use strict";class bloxPortfolio ext
               <p class="description">Creates a new EOS account</p>
             </div>
 
+            <div class="component">
+              <div class="title">Blox-Transfer</div>
+              <p class="description">Transfer a set amount of EOS</p>
+            </div>
 
             <div class="component">
               <div class="title">Blox-Token</div>
