@@ -199,9 +199,7 @@ class bloxPortfolio extends PolymerElement {
               <div class="title">Blox-Identity</div>
               <p class="description">Generates an identity within a wallet</p>
             </div>
-
           </div>
-
 
           <blox-spacer space="90"></blox-spacer>
 

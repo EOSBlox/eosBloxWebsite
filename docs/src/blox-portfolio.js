@@ -133,8 +133,8 @@ define(["./blox-app.js"],function(_bloxApp){"use strict";class bloxPortfolio ext
               <div class="title">Blox-Connect</div>
               <div class="version">v1.0.0</div>
               <p class="description">Connects to the EOS Blockchain</p>
-              <a href="https://github.com/EOSBlox/blox-chain" target="_blank"><img src="../images/github.svg"></a>
-              <a href="https://www.npmjs.com/package/blox-chain" target="_blank"><img src="../images/npm.svg"></a>
+              <a href="https://github.com/EOSBlox/blox-connect" target="_blank"><img src="../images/github.svg"></a>
+              <a href="https://www.npmjs.com/package/blox-conect" target="_blank"><img src="../images/npm.svg"></a>
             </div>
 
             <div class="component">
@@ -191,9 +191,7 @@ define(["./blox-app.js"],function(_bloxApp){"use strict";class bloxPortfolio ext
               <div class="title">Blox-Identity</div>
               <p class="description">Generates an identity within a wallet</p>
             </div>
-
           </div>
-
 
           <blox-spacer space="90"></blox-spacer>
 
