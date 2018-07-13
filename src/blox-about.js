@@ -18,7 +18,7 @@ class BloxAbout extends PolymerElement {
       <div class="container lightGrey-bg">
         <div class="innerContainer">
           <blox-header theme="dark"></blox-header>
-          <h2 class="darkBlue-txt">A Suite of Web Components<small>Ready for your next EOS DApp<small></h2>
+          <h2 class="darkBlue-txt">A Suite of Web Components<small>Making Blockchain Innovation Simple<small></h2>
           <blox-spacer space="90"></blox-spacer>
         </div>
       </div>
