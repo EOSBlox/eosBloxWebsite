@@ -25,6 +25,9 @@ class BloxContact extends PolymerElement {
         .description, .email {
           font-size: 14px;
         }
+        a {
+          color: #577B4D;
+        }
       </style>
 
       <div class="container green-bg">
